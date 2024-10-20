@@ -1,0 +1,30 @@
+<!--  1) WAP to print sum of non primes in a number
+
+ input: Enter a number: 763328
+output: 14 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    number = prompt("Enter a number: ") //763328
+nPSum=0
+for(num of number){
+if(num>1){
+for(i=2;i<num;i++){
+if(num%i==0) {
+nPSum+=Number(num)
+break
+}
+}
+}
+}
+console.log(nPSum)
+   </script>
+</body>
+</html>
